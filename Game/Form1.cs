@@ -16,5 +16,12 @@ namespace Game
         {
 
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            GamePage page = new GamePage();
+            page.Show();
+            this.Hide();
+        }
     }
 }
