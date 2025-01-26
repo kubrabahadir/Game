@@ -111,7 +111,6 @@ namespace Game
             button2.Text = currentQuestion.Şık2;
             button3.Text = currentQuestion.Şık3;
             button4.Text = currentQuestion.Şık4;
-            label1.AutoSize = false;
             // Doğru şık bilgisini sakla
             correctAnswer = currentQuestion.DoğruŞık;
 
@@ -132,16 +131,31 @@ namespace Game
                 wrong++;
 
             }
+            DisableAnswerButtons();
 
             // Sonraki soruya geçiş için "Next" butonunu aktif yap
             button5.Enabled = true;
         }
+        private void DisableAnswerButtons()
+        {
+            button1.Enabled = false;
+            button2.Enabled = false;
+            button3.Enabled = false;
+            button4.Enabled = false;
+        }
+
         private void ResetButtonColors()
         {
             button1.BackColor = SystemColors.Control;
             button2.BackColor = SystemColors.Control;
             button3.BackColor = SystemColors.Control;
             button4.BackColor = SystemColors.Control;
+
+            button1.Enabled = true;
+            button2.Enabled = true;
+            button3.Enabled = true;
+            button4.Enabled = true;
+
             button5.Enabled = false; // "Next" butonunu devre dışı bırak
         }
 

@@ -38,7 +38,7 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(365, 306);
+            label1.Location = new Point(350, 314);
             label1.Name = "label1";
             label1.Size = new Size(50, 20);
             label1.TabIndex = 0;
@@ -47,7 +47,7 @@
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(365, 359);
+            label2.Location = new Point(350, 359);
             label2.Name = "label2";
             label2.Size = new Size(50, 20);
             label2.TabIndex = 1;
@@ -57,7 +57,7 @@
             // 
             pictureBox1.BackgroundImageLayout = ImageLayout.Center;
             pictureBox1.Image = Properties.Resources.gameover;
-            pictureBox1.Location = new Point(275, 96);
+            pictureBox1.Location = new Point(270, 104);
             pictureBox1.Name = "pictureBox1";
             pictureBox1.Size = new Size(260, 152);
             pictureBox1.SizeMode = PictureBoxSizeMode.CenterImage;
