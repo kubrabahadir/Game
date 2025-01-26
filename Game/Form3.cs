@@ -16,9 +16,9 @@ namespace Game
         public Final(int correct, int wrong)
         {
             InitializeComponent();
-            label2.Text = $"Doğru:{correct},Yanlış:{wrong}";
-            skor = (correct*10)-(wrong*10);
-            label1.Text = $"Skor:{skor}";
+            label2.Text = $"Doğru: {correct},Yanlış: {wrong}";
+            skor = (correct*10)-(wrong*5);
+            label1.Text = $"Skor: {skor}";
         }
 
         private void Final_Load(object sender, EventArgs e)

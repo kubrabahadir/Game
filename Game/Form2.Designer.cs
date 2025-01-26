@@ -38,11 +38,12 @@
             label1 = new Label();
             label2 = new Label();
             timer1 = new System.Windows.Forms.Timer(components);
+            label3 = new Label();
             SuspendLayout();
             // 
             // button1
             // 
-            button1.Location = new Point(203, 195);
+            button1.Location = new Point(232, 172);
             button1.Name = "button1";
             button1.Size = new Size(109, 35);
             button1.TabIndex = 0;
@@ -52,7 +53,7 @@
             // 
             // button2
             // 
-            button2.Location = new Point(398, 195);
+            button2.Location = new Point(427, 172);
             button2.Name = "button2";
             button2.Size = new Size(109, 35);
             button2.TabIndex = 1;
@@ -62,7 +63,7 @@
             // 
             // button3
             // 
-            button3.Location = new Point(398, 271);
+            button3.Location = new Point(427, 248);
             button3.Name = "button3";
             button3.Size = new Size(109, 35);
             button3.TabIndex = 2;
@@ -72,7 +73,7 @@
             // 
             // button4
             // 
-            button4.Location = new Point(203, 271);
+            button4.Location = new Point(232, 248);
             button4.Name = "button4";
             button4.Size = new Size(109, 35);
             button4.TabIndex = 3;
@@ -82,7 +83,7 @@
             // 
             // button5
             // 
-            button5.Location = new Point(303, 367);
+            button5.Location = new Point(332, 344);
             button5.Name = "button5";
             button5.Size = new Size(109, 32);
             button5.TabIndex = 4;
@@ -92,8 +93,10 @@
             // 
             // label1
             // 
+            label1.Anchor = AnchorStyles.None;
             label1.AutoSize = true;
-            label1.Location = new Point(332, 101);
+            label1.ImageAlign = ContentAlignment.MiddleLeft;
+            label1.Location = new Point(309, 105);
             label1.Name = "label1";
             label1.Size = new Size(50, 20);
             label1.TabIndex = 5;
@@ -107,11 +110,21 @@
             label2.Size = new Size(0, 20);
             label2.TabIndex = 6;
             // 
+            // label3
+            // 
+            label3.AutoSize = true;
+            label3.Location = new Point(-1, 0);
+            label3.Name = "label3";
+            label3.Size = new Size(342, 20);
+            label3.TabIndex = 7;
+            label3.Text = "Her doğru 10 puan her yanlış 5 puan değerindedir.";
+            // 
             // GamePage
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(label3);
             Controls.Add(label2);
             Controls.Add(label1);
             Controls.Add(button5);
@@ -138,5 +151,6 @@
         private Label label1;
         private Label label2;
         private System.Windows.Forms.Timer timer1;
+        private Label label3;
     }
 }

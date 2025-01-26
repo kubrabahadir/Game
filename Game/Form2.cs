@@ -111,7 +111,7 @@ namespace Game
             button2.Text = currentQuestion.Şık2;
             button3.Text = currentQuestion.Şık3;
             button4.Text = currentQuestion.Şık4;
-
+            label1.AutoSize = false;
             // Doğru şık bilgisini sakla
             correctAnswer = currentQuestion.DoğruŞık;
 
